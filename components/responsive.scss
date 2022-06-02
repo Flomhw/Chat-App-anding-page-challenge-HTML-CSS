@@ -1,0 +1,58 @@
+
+@media (max-width:1080px){
+    .projectContainer {
+        height: 100%;
+        overflow: visible;
+        padding: 0;
+        .contentContainer {
+            flex-direction: column;
+            padding: 2em 3em;
+
+            .mobileContainer {
+                width: 100%;
+            }
+            .textBlockContainer {
+                width: 100%;
+                margin: 3em 0 0 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .projectContainer::before{
+        width: 60%;
+        height: 70%;
+    }
+    .projectContainer::after {
+        width: 40%;
+        height: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1080px){
+    .projectContainer {
+        .contentContainer {
+            .mobileContainer, .textBlockContainer {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1080px){
+    .projectContainer {
+        padding: 0 10rem;
+        .contentContainer {
+            .mobileContainer {
+                width: 400px;
+            }
+            .textBlockContainer {
+                width: 30%;
+            }
+        }
+    }
+
+
+}
+
+

@@ -1,0 +1,45 @@
+$radius: 300px;
+@mixin positionAbsolute(){
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 30%;
+    height: 90%;
+}
+
+.projectContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 25rem;
+    background: $backgroundApp;
+    overflow: hidden;
+
+    .contentContainer {
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.projectContainer:before{
+    @include positionAbsolute();
+    top: 0;
+    left: -5%;
+    background: linear-gradient(180deg, $gradientColor1 0%, $gradientColor2 100%);
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+.projectContainer:after{
+    @include positionAbsolute();
+    bottom: 0;
+    right: -5%;
+    background: $bgViolet;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    opacity: .1;
+}
+

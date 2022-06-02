@@ -1,0 +1,166 @@
+@mixin message {
+    max-width: 66%;
+    margin: 1em;
+    padding: .5em .5em;
+    border-radius: 10px; 
+    font-size: 13px;
+}
+
+.mobileContainer {
+    width: 33%;
+    height: auto;
+    z-index: 1;
+    border-radius: 15px;
+
+    .theMobile {
+        height: 100%;
+        background: $backgroundApp;
+        border: 10px solid $white;
+        border-radius: 15px;
+        box-shadow: 3px 12px 20px 2px rgba(0,0,0,0.1);
+
+        .theMobile-top {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(300deg, $gradientColor1 0%, $gradientColor2 100%);
+            color: $white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+
+            .theMobile-top-span {
+                background: $white;
+                margin: auto;
+                width: 50%;
+                height: 25px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+            }
+
+            .theMobile-top-profile {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: .5em 0 .75em 0;
+
+                .theMobile-top-profile-left {
+                    padding: 0 .5em 0 .75em;
+                }
+
+                .theMobile-top-profile-center {
+                    display: flex;
+                    align-items: center;
+                    flex-grow: 2;
+                    img {
+                        width: 50px;
+                        height: auto;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                    }
+
+                    h2 {
+                        font-weight: 500;
+                    }
+                    h3 {
+                        color: $paleViolet;
+                    }
+
+                    .theMobile-top-profile-center--data {
+                        padding: 0 0 0 .5em;
+                    }
+                }
+
+                .theMobile-top-profile-right {
+                    padding: 1em 0 0 0;
+                    transform:rotate(90deg);
+                }
+            }
+        }
+
+        .theMobile-chat {
+            .theMobile-chat-left {
+                color: $moderateViolet;
+
+                .theMobile-chat-left--item {
+                    @include message();
+                    background: $backgroundViolet;
+                    
+                }
+
+                .message-offer {
+                    display:flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 1em;
+                    background: linear-gradient(300deg, $gradientColor1 0%, $gradientColor2 100%);;
+                    color: $white;
+                    
+
+                    span:first-of-type{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                        margin: 0 1.25em 0 0; 
+                    }
+                    span:last-of-type{
+                        font-weight: 700;
+                        font-size: 1.25em;
+                        margin: 0 0 0 auto;
+                    }
+                }
+            }
+
+                .theMobile-chat-right {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    color: $darkText;
+                    .picture-row {
+                        display: flex;
+                        justify-content: space-around;
+                        img {
+                            max-width: 65px;
+                            height: auto;
+                            margin: 0 .5em;
+                            border-radius: 15px;
+                        }
+                    }
+                    .theMobile-chat-right--item {
+                        @include message();
+                        background: $white;
+                    }
+                    .theMobile-chat-right--item:first-of-type {
+                        background: none;
+                    }
+                }
+        }
+        .theMobile-input {
+            background: $white;
+            display: flex;
+            align-items: center;
+            border-radius: 100px;
+            margin: 1em;
+            padding: .75em;
+            color: $blueText;
+            font-size: 13px;
+            
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                margin: 0 0 0 auto;
+                background: $headingViolet;
+                color: $white;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

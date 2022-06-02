@@ -1,0 +1,14 @@
+.textBlockContainer {
+    width: 45%;
+    z-index: 1;
+    
+    h1 {
+        margin: 0 0 1em 0;
+        font: 700 2rem 'Rubik', sans-serif;
+        color: $headingViolet;
+    }
+    p {
+        font: 400 1rem 'Rubik', sans-serif;
+        color: $blueText;
+    }
+}

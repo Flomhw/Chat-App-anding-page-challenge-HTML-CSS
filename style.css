@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+.projectContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 25rem;
+  background: #f5f3f7;
+  overflow: hidden;
+}
+.projectContainer .contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projectContainer:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 30%;
+  height: 90%;
+  top: 0;
+  left: -5%;
+  background: linear-gradient(180deg, #e942ff 0%, #8838ff 100%);
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+}
+
+.projectContainer:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 30%;
+  height: 90%;
+  bottom: 0;
+  right: -5%;
+  background: #dca8ff;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  opacity: 0.1;
+}
+
+.mobileContainer {
+  width: 33%;
+  height: auto;
+  z-index: 1;
+  border-radius: 15px;
+}
+.mobileContainer .theMobile {
+  height: 100%;
+  background: #f5f3f7;
+  border: 10px solid white;
+  border-radius: 15px;
+  box-shadow: 3px 12px 20px 2px rgba(0, 0, 0, 0.1);
+}
+.mobileContainer .theMobile .theMobile-top {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(300deg, #e942ff 0%, #8838ff 100%);
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-span {
+  background: white;
+  margin: auto;
+  width: 50%;
+  height: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5em 0 0.75em 0;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-left {
+  padding: 0 0.5em 0 0.75em;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-center {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-center img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-center h2 {
+  font-weight: 500;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-center h3 {
+  color: #d89eff;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-center .theMobile-top-profile-center--data {
+  padding: 0 0 0 0.5em;
+}
+.mobileContainer .theMobile .theMobile-top .theMobile-top-profile .theMobile-top-profile-right {
+  padding: 1em 0 0 0;
+  transform: rotate(90deg);
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-left {
+  color: #9241c8;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-left .theMobile-chat-left--item {
+  max-width: 66%;
+  margin: 1em;
+  padding: 0.5em 0.5em;
+  border-radius: 10px;
+  font-size: 13px;
+  background: #e9dff1;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-left .message-offer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  background: linear-gradient(300deg, #e942ff 0%, #8838ff 100%);
+  color: white;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-left .message-offer span:first-of-type {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 1.25em 0 0;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-left .message-offer span:last-of-type {
+  font-weight: 700;
+  font-size: 1.25em;
+  margin: 0 0 0 auto;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #555555;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-right .picture-row {
+  display: flex;
+  justify-content: space-around;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-right .picture-row img {
+  max-width: 65px;
+  height: auto;
+  margin: 0 0.5em;
+  border-radius: 15px;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-right .theMobile-chat-right--item {
+  max-width: 66%;
+  margin: 1em;
+  padding: 0.5em 0.5em;
+  border-radius: 10px;
+  font-size: 13px;
+  background: white;
+}
+.mobileContainer .theMobile .theMobile-chat .theMobile-chat-right .theMobile-chat-right--item:first-of-type {
+  background: none;
+}
+.mobileContainer .theMobile .theMobile-input {
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  margin: 1em;
+  padding: 0.75em;
+  color: #c6cacd;
+  font-size: 13px;
+}
+.mobileContainer .theMobile .theMobile-input span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 0 0 0 auto;
+  background: #3e2753;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.textBlockContainer {
+  width: 45%;
+  z-index: 1;
+}
+.textBlockContainer h1 {
+  margin: 0 0 1em 0;
+  font: 700 2rem "Rubik", sans-serif;
+  color: #3e2753;
+}
+.textBlockContainer p {
+  font: 400 1rem "Rubik", sans-serif;
+  color: #c6cacd;
+}
+
+@media (max-width: 1080px) {
+  .projectContainer {
+    height: 100%;
+    overflow: visible;
+    padding: 0;
+  }
+  .projectContainer .contentContainer {
+    flex-direction: column;
+    padding: 2em 3em;
+  }
+  .projectContainer .contentContainer .mobileContainer {
+    width: 100%;
+  }
+  .projectContainer .contentContainer .textBlockContainer {
+    width: 100%;
+    margin: 3em 0 0 0;
+    text-align: center;
+  }
+
+  .projectContainer::before {
+    width: 60%;
+    height: 70%;
+  }
+
+  .projectContainer::after {
+    width: 40%;
+    height: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .projectContainer .contentContainer .mobileContainer, .projectContainer .contentContainer .textBlockContainer {
+    width: 60%;
+  }
+}
+@media (min-width: 1080px) {
+  .projectContainer {
+    padding: 0 10rem;
+  }
+  .projectContainer .contentContainer .mobileContainer {
+    width: 400px;
+  }
+  .projectContainer .contentContainer .textBlockContainer {
+    width: 30%;
+  }
+}
+/* Reset default style */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
