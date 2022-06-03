@@ -200,6 +200,7 @@
 .textBlockContainer p {
   font: 400 1rem "Rubik", sans-serif;
   color: #c6cacd;
+  line-height: 1.8;
 }
 
 @media (max-width: 1080px) {
@@ -238,13 +239,13 @@
 }
 @media (min-width: 1080px) {
   .projectContainer {
-    padding: 0 10rem;
+    padding: 0 15rem;
   }
   .projectContainer .contentContainer .mobileContainer {
-    width: 400px;
+    width: 350px;
   }
   .projectContainer .contentContainer .textBlockContainer {
-    width: 30%;
+    width: 33%;
   }
 }
 /* Reset default style */
